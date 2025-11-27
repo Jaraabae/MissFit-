@@ -4,7 +4,6 @@ import { CameraView, CameraType, useCameraPermissions } from 'expo-camera';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Svg, { Line } from 'react-native-svg';
 
-//Define types for WebSocket data
 interface Measurements {
     [key: string]: number;
 }
@@ -15,7 +14,6 @@ interface Keypoint {
     score: number;
 }
 
-// Define edges for skeleton (matching backend EDGES)
 const EDGES = [
     [0, 1], [0, 2], [1, 3], [2, 4],
     [0, 5], [0, 6], [5, 7], [7, 9],
@@ -402,4 +400,5 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: '500',
     },
+
 });
